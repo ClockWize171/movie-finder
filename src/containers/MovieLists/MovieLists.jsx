@@ -45,7 +45,6 @@ const MovieLists = () => {
       <Box w='150px'>
         <Text
           pt={2}
-          // bgGradient={useColorMode("red", "blue")}
           bgGradient="linear(to-r, purple.400, blue.500, purple.600)"
           bgClip='text'
           fontSize='4xl'

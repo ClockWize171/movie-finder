@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 import { useDispatch } from 'react-redux'
+import Navbar from '../../components/Navbar/Navbar'
 import { fetchAsyncMovies, fetchAsyncShows } from '../../features/movies/MovieSlice'
 import MovieLists from '../MovieLists/MovieLists'
 
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       <MovieLists />
     </div>
   )

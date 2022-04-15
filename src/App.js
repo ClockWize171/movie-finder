@@ -1,6 +1,5 @@
 import './App.css';
 import { Home, MovieDetail, NotFound } from './containers'
-import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { Container } from '@chakra-ui/react';
 import {
@@ -13,7 +12,6 @@ function App() {
   return (
     <Container maxW="container.xl">
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path='*' element={<NotFound />} />
           <Route path='/' exact element={<Home />}></Route>
