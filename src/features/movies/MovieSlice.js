@@ -38,10 +38,10 @@ const movieSlice = createSlice({
 
         // Movie Fetching
         [fetchAsyncMovies.pending]: () => {
-            console.log("Pending");
+            // console.log("Pending");
         },
         [fetchAsyncMovies.fulfilled]: (state, { payload }) => {
-            console.log("Fetched Successfully!");
+            // console.log("Fetched Successfully!");
             return { ...state, movies: payload };
         },
         [fetchAsyncMovies.rejected]: () => {
@@ -50,13 +50,13 @@ const movieSlice = createSlice({
 
         // Show Fetching
         [fetchAsyncShows.fulfilled]: (state, { payload }) => {
-            console.log("Fetched Successfully!");
+            // console.log("Fetched Successfully!");
             return { ...state, shows: payload };
         },
 
         // Detail Fetching
         [fetchAsyncDetail.fulfilled]: (state, { payload }) => {
-            console.log("Fetched Successfully!");
+            // console.log("Fetched Successfully!");
             return { ...state, detail: payload };
         },
     },

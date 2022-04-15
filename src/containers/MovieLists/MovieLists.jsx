@@ -2,7 +2,7 @@ import React from 'react'
 import MovieBox from '../../components/MovieBox/MovieBox';
 import { useSelector } from 'react-redux'
 import { getAllMovies, getAllShows } from '../../features/movies/MovieSlice';
-import { SimpleGrid, Text, Box } from '@chakra-ui/react';
+import { SimpleGrid, Text, Box, Divider } from '@chakra-ui/react';
 
 const MovieLists = () => {
   const movies = useSelector(getAllMovies);
@@ -54,6 +54,7 @@ const MovieLists = () => {
         </Text>
       </Box>
       {renderMovies}
+      <Divider pt={10} />
       <Box w='150px'>
         <Text
           pt={2}
@@ -64,7 +65,7 @@ const MovieLists = () => {
           Shows
         </Text>
       </Box>
-        {renderShows}
+      {renderShows}
     </div>
 
   )

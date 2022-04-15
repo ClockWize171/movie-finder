@@ -7,7 +7,7 @@ import MovieLists from '../MovieLists/MovieLists'
 const Home = () => {
 
   const dispatch = useDispatch();
-  const movieText = 'Spider';
+  const movieText = 'avengers';
   const showText = 'Stranger';
   useEffect(() => {
     dispatch(fetchAsyncMovies(movieText));

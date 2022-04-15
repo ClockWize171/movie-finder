@@ -14,14 +14,17 @@ const MovieBox = (props) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}>
       <Link to={`/movie/${data.imdbID}`}>
-        <Box maxW='md' borderWidth='2px' height='full' borderRadius='lg'>
+        <Box maxW='md'
+          borderWidth='2px'
+          height='full'
+          borderRadius='lg'>
           <Box align='center'>
             <Image
               fallbackSrc='https://via.placeholder.com/240'
               borderRadius='lg'
               src={data.Poster}
               w='full'
-              h={isNotSmallerScreen? '20rem': '23rem'} />
+              h={isNotSmallerScreen ? '20rem' : '30rem'} />
           </Box>
           <Box p={3}>
             <Text fontWeight="semibold">

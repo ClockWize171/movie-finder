@@ -46,7 +46,13 @@ const MovieDetail = () => {
           (
             <SimpleGrid pt={5} columns={[1, null, 2]} spacing='40px'>
               <Box align='center'>
-                <Image boxShadow='dark-lg' borderRadius='lg' mt={isNotSmallerScreen?'8vh':''} src={data.Poster} h='30rem'></Image>
+                <Image
+                fallbackSrc='https://via.placeholder.com/240x380'
+                boxShadow='dark-lg' 
+                borderRadius='lg' 
+                mt={isNotSmallerScreen?'8vh':''} 
+                src={data.Poster} 
+                h='30rem'></Image>
               </Box>
               <Box>
                 <Box pt={3}>
