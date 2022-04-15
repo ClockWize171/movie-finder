@@ -1,0 +1,5 @@
+export { default as AboutMe } from "./About/About"
+export { default as Home } from "./Home/Home"
+export { default as NotFound } from "./NotFound/NotFound"
+export { default as MovieLists } from "./MovieLists/MovieLists"
+export { default as MovieDetail } from "./MovieDetail/MovieDetail"
