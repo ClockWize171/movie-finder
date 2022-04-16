@@ -8,8 +8,8 @@ const Footer = () => {
 
   return (
     <Box
-      pt={5}
-      pb={3}
+      pt={10}
+      pb={5}
       textAlign="center">
       <Text
         fontSize="sm">©

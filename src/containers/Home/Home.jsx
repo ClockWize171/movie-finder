@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect} from 'react'
 
 import { useDispatch } from 'react-redux'
 import Navbar from '../../components/Navbar/Navbar'
@@ -10,6 +10,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const movieText = 'avengers';
   const showText = 'Stranger';
+
   useEffect(() => {
     dispatch(fetchAsyncMovies(movieText));
     dispatch(fetchAsyncShows(showText));

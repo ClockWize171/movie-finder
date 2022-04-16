@@ -1,30 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Box, Image, Text, useMediaQuery } from '@chakra-ui/react'
+import { Box, Image, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
 const MovieBox = (props) => {
   const { data } = props;
 
-  // Screen Size
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:713px)");
+  // // Screen Size
+  // const [isNotSmallerScreen] = useMediaQuery("(min-width:713px)");
+
   return (
     <motion.div
       transition={{ duration: 0.3 }}
-      whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}>
       <Link to={`/movie/${data.imdbID}`}>
-        <Box maxW='md'
+        <Box
+          ml={3}
+          w={['50vw', '30vw', '30vw', '15vw']}
           borderWidth='2px'
           height='full'
           borderRadius='lg'>
-          <Box align='center'>
+          <Box style={{
+            pointerEvents: "none"
+          }} align='center'>
             <Image
               fallbackSrc='https://via.placeholder.com/240'
               borderRadius='lg'
               src={data.Poster}
               w='full'
-              h={isNotSmallerScreen ? '20rem' : '30rem'} />
+              h='40vh' />
           </Box>
           <Box p={3}>
             <Text fontWeight="semibold">
@@ -39,7 +43,6 @@ const MovieBox = (props) => {
         </Box>
       </Link>
     </motion.div>
-
   )
 }
 
