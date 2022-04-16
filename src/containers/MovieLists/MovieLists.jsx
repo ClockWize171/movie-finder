@@ -21,7 +21,7 @@ const MovieLists = () => {
       const scrollWidth = carousel.current.scrollWidth
       const offsetWidth = carousel.current.offsetWidth
       setWidth(scrollWidth - offsetWidth)
-    }, 500)
+    }, 1000)
   }, [carousel])
 
 
