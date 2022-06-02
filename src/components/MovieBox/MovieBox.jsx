@@ -20,9 +20,8 @@ const MovieBox = (props) => {
           borderWidth='2px'
           height='full'
           borderRadius='lg'>
-          <Box style={{
-            pointerEvents: "none"
-          }} align='center'>
+          <Box
+            align='center'>
             <Image
               fallbackSrc='https://via.placeholder.com/240'
               borderRadius='lg'

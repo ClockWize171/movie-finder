@@ -3,7 +3,7 @@ import MovieBox from '../../components/MovieBox/MovieBox';
 import './MovieLists.css'
 import { useSelector } from 'react-redux'
 import { getAllMovies, getAllShows } from '../../features/movies/MovieSlice';
-import {  Text, Box, Divider } from '@chakra-ui/react';
+import { Text, Box, Divider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MovieLists = () => {

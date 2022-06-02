@@ -3,6 +3,13 @@
   }
   
   .carousel {
+    
     cursor: grab;
     overflow: hidden;
   }
+
+  *, *::after, *::before {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;    
+}
